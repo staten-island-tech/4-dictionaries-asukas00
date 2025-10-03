@@ -1,10 +1,11 @@
 items = [
-{     "name": "apple",
+{"name": "apple"
     "price": 0.99,  
-    "department": "fruits"
-}
+    "department": "fruits",
+    }
+
 {
-    "name": "strawberry",
+    "name": "strawberry"
     "price": 4.99,
     "department": "fruits"}
 ]
