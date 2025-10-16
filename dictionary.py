@@ -1,21 +1,22 @@
 items = [
-{"name": "apple"
-    "price": 0.99,  
+{
+    "name": "apple",
+    "price" :0.99,  
     "department": "fruits",
-    }
+    },
 
 {
-    "name": "strawberry"
+    "name": "strawberry",
     "price": 4.99,
-    "department": "fruits"}
-]
+    "department": "fruits"},
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
     
-
+]
    
 
 
 
 
 
-print(items["name"])
+print(items[0]["price"])
