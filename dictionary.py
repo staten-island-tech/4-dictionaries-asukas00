@@ -3,7 +3,6 @@ items = [
     "name": "apple",
     "price": 0.99,
     "department": "fruits"},
-
 {
     "name": "strawberry",
     "price": 4.99,
@@ -24,10 +23,27 @@ items = [
     "name": "airpod",
     "price": 129,
     "department": "technology"},
+{
+    "name": "iphone17-pro-max",
+    "price": 1670,
+    "department": "technology"}
+
                                                                                                                                                                                                                                                                                                                                                                  
 ]
 
 
 
-
-print(items[0,1,2,3]["price"])
+cart = []
+for index, item in enumerate(items):
+    print(index, ":", item["name"])
+x= input("what do you want?")
+for item in items:
+    if item["name"] ==x:
+        print(item["name"])
+        cart.append(x)
+        print(cart)
+y= input("do you need anything else? y/n")
+if ('y') == y:
+    print("what else")
+else:
+    print(f"here is your total {item["price"]}")
