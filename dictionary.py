@@ -34,16 +34,23 @@ items = [
 
 
 cart = []
+total = 0
 for index, item in enumerate(items):
     print(index, ":", item["name"])
-x= input("what do you want?")
-for item in items:
-    if item["name"] ==x:
-        print(item["name"])
-        cart.append(x)
-        print(cart)
-y= input("do you need anything else? y/n")
-if ('y') == y:
-    print("what else")
-else:
-    print(f"here is your total {item["price"]}")
+while True:
+    x= input("what do you want?")
+    item_in_stock = False
+    for item in items:
+        if item["name"] ==x:
+                item_in_stock = True
+                cart.append(x)
+                print(cart)
+                total += item["price"]
+                
+                   
+            
+    y = input("Do you need anything else? (y/n) ")
+    if y.lower() != 'y':
+            print(f"your total is {total} and here is your cart {cart}")
+            break
+
